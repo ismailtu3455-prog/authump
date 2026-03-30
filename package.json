@@ -1,0 +1,27 @@
+{
+  "name": "umpsite",
+  "version": "1.0.0",
+  "description": "Monorepo for ZIP playlist sharing SaaS",
+  "private": true,
+  "scripts": {
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:web": "npm --prefix web run dev",
+    "build:backend": "npm --prefix backend run build",
+    "build:web": "npm --prefix web run build",
+    "build": "npm run build:backend && npm run build:web",
+    "lint": "npm --prefix web run lint"
+  },
+  "workspaces": [
+    "backend",
+    "web"
+  ],
+  "keywords": [
+    "saas",
+    "nextjs",
+    "express",
+    "zip-sharing"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
